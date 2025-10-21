@@ -3,7 +3,7 @@
 </script>
 
 <template>  
-  <div id="carouselExampleCaptions" class="carousel slide overflow-hidden">
+  <div id="carouselExampleCaptions" class="carousel slide overflow-hidden" data-bs-ride="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -38,7 +38,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>  
-  <Footer/>
+  <Footer class="footer fixed-bottom"/>
 </template>
 
 <style lang="scss" scoped>
@@ -75,7 +75,14 @@
 .carousel::-webkit-scrollbar {
   display: none !important;
 }
-
+.footer {
+  margin-bottom: -45px;
+}
+@media (max-width: 991.98px) { 
+  .footer {
+    margin-bottom: 10px;
+  }
+}
 </style>
 
   
